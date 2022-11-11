@@ -1,0 +1,59 @@
+.header {
+  display: block;
+  border: solid 2px #000;
+
+  @media (min-width: 361px)  {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+    @media (min-width: 361px)  {
+      display: block;
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 1rem;
+  }
+
+  &__logo {
+    width: 12rem;
+    height: 3rem;
+    background: #000;
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background: none;
+    border: 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background-color: #000;
+    }
+
+    @media (min-width: 361px)  {
+      display: none;
+    }
+  }
+
+  &__btn-item {
+    width: 2.5rem;
+    height: 4px;
+    background-color: #000;
+    .header__btn:hover &,
+    .header__btn:focus & {
+      background-color: #fff;
+    }
+  }
+}

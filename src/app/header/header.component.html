@@ -1,0 +1,11 @@
+<div class="header__container">
+  <div class="header__logo"></div>
+  <button *ngIf="!isDesktopMode" class="header__btn" type="button" (click)="isNavVisible = !isNavVisible">
+    <span class="header__btn-item"></span>
+    <span class="header__btn-item"></span>
+    <span class="header__btn-item"></span>
+  </button>
+  <app-navigation *ngIf="isDesktopMode"></app-navigation>
+</div>
+<app-navigation *ngIf="!isDesktopMode" [class.nav--hidden]="!isNavVisible"></app-navigation>
+

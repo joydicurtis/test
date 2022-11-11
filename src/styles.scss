@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import './styles/global';
+@import './app/content/content.component';
+@import './app/features/features.component';
+@import './app/footer/footer.component';
+@import './app/header/header.component';
+@import './app/information/information.component';
+@import './app/navigation/navigation.component';
+@import './app/sections/sections.component';
+@import './app/weather/weather.component';

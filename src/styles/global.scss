@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  @media (min-width: 1366px) and (min-height: 768px)  {
+    font-size: 10px;
+  }
+  @media (min-width: 1536px) and (min-height: 864px)  {
+    font-size: 12px;
+  }
+  @media (min-width: 1920px) and (min-height: 1080px)  {
+    font-size: 12px;
+  }
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 5rem auto 5rem;
+  min-height: 100%;
+}

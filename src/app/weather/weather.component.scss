@@ -1,0 +1,13 @@
+.weather {
+  display: block;
+  border: solid 2px #000;
+  padding: 1rem;
+  order: 2;
+  @media (min-width: 361px)  {
+    order: 5;
+  }
+
+  &__title {
+    margin: 0 0 1rem;
+  }
+}

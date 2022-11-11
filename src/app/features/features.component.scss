@@ -1,0 +1,18 @@
+.features {
+  display: block;
+  border: solid 2px #000;
+  padding: 1rem;
+  order: 3;
+  @media (min-width: 361px)  {
+    order: 4;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+  }
+}
